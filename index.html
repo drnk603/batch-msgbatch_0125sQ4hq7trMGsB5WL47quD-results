@@ -1,4 +1,64 @@
 <!DOCTYPE html><html lang="nl"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com",
+      "email": "welcome@domain.com",
+      "telephone": "+31 40 2911760",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "World Trade Center Amsterdam, Strawinskylaan 77, Floor 6, Office 603, 1077 XX Amsterdam"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "welcome@domain.com",
+        "telephone": "+31 40 2911760"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain",
+      "publisher": {
+        "@id": "https://domain.com/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com#webpage",
+      "url": "https://domain.com",
+      "name": "domain - Innovatieve Digitale Transformatie | domain.com",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "about": {
+        "@id": "https://domain.com/#org"
+      },
+      "inLanguage": "nl",
+      "description": "domain biedt innovatieve digitale transformatieoplossingen met een toekomstgerichte aanpak. Ontdek hoe wij uw bedrijf helpen groeien met op maat gemaakte consultingdiensten."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://domain.com#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://domain.com"
+        }
+      ]
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>domain - Innovatieve Digitale Transformatie | domain.com</title>
@@ -12,24 +72,34 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+<link rel="stylesheet" href="./consent.css">
+<script src="./consent.js"></script>
+</head>
  <body>
-  <header class="l-header navbar navbar-expand-md sticky-top bg-white border-bottom">
-   <div class="container">
-    <a class="c-logo navbar-brand" href="/" aria-label="NatuurDigitaal Consulting Home"> 
-     <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="20" cy="20" r="18" fill="#FF6B35"></circle> <path d="M12 28L20 12L28 28" stroke="#003D5B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <text x="45" y="26" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#003D5B">NatuurDigitaal</text>
-     </svg> 
-    </a>
-    <button class="c-nav__toggle navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigatie"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-     <nav class="c-nav navbar-nav ms-auto" aria-label="Hoofdnavigatie">
-      <a class="c-nav__link nav-link" href="/" aria-current="page">Home</a> <a class="c-nav__link nav-link" href="about.html">Over Ons</a> <a class="c-nav__link nav-link" href="services.html">Diensten</a> <a class="c-nav__link nav-link" href="contact.html">Contact</a>
-     </nav>
-     <a href="contact.html" class="c-button c-button--primary ms-md-3 mt-3 mt-md-0">Start Uw Transformatie</a>
-    </div>
-   </div>
-  </header>
+<header class="dr-header" data-dr-variant="v1">
+  <div class="dr-header-inner">
+    <a class="dr-logo" href="./index.html" aria-label="domain">domain</a>
+
+    <nav class="dr-nav" aria-label="Primary navigation">
+      <ul class="dr-nav-list">
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./contact.html">Contact</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <button class="dr-burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="dr-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="dr-mobile-menu" id="dr-mobile-menu" aria-label="Mobile navigation">
+  <ul class="dr-mobile-nav-list">
+    <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./contact.html">Contact</a></li><li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+  </ul>
+</nav>
+
   <main>
    <section class="c-hero l-section py-5" style="background: linear-gradient(135deg, rgba(255,107,53,0.95) 0%, rgba(0,61,91,0.85) 100%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&amp;h=1080&amp;fit=crop&amp;q=80') center/cover no-repeat; min-height: 90vh; display: flex; align-items: center; color: white;" data-aos="fade-in">
     <div class="container">
@@ -248,60 +318,63 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer bg-dark text-white py-4 py-md-5">
-   <div class="container">
-    <div class="row g-4">
-     <div class="col-lg-4">
-      <h3 class="h5 fw-semibold mb-3">NatuurDigitaal Consulting</h3>
-      <p class="mb-3" style="opacity: 0.9;">Innovatieve digitale transformatie voor vooruitstrevende organisaties. Samen bouwen we aan de toekomst.</p>
-      <p class="mb-1"><strong>Adres:</strong> {address}</p>
-      <p class="mb-1"><strong>Telefoon:</strong> {telephone}</p>
-      <p class="mb-0"><strong>E-mail:</strong> info@domain.com</p>
-     </div>
-     <div class="col-lg-2 col-md-4">
-      <h4 class="h6 fw-semibold mb-3">Navigatie</h4>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="/" class="text-white text-decoration-none" style="opacity: 0.85;">Home</a></li>
-       <li class="mb-2"><a href="about.html" class="text-white text-decoration-none" style="opacity: 0.85;">Over Ons</a></li>
-       <li class="mb-2"><a href="services.html" class="text-white text-decoration-none" style="opacity: 0.85;">Diensten</a></li>
-       <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none" style="opacity: 0.85;">Contact</a></li>
-      </ul>
-     </div>
-     <div class="col-lg-3 col-md-4">
-      <h4 class="h6 fw-semibold mb-3">Juridisch</h4>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none" style="opacity: 0.85;">Privacybeleid</a></li>
-       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white text-decoration-none" style="opacity: 0.85;">Algemene Voorwaarden</a></li>
-       <li class="mb-2"><a href="cookie_policy.html" class="text-white text-decoration-none" style="opacity: 0.85;">Cookiebeleid</a></li>
-       <li class="mb-2"><a href="gdpr-rights.html" class="text-white text-decoration-none" style="opacity: 0.85;">AVG Rechten</a></li>
-      </ul>
-     </div>
-     <div class="col-lg-3 col-md-4">
-      <h4 class="h6 fw-semibold mb-3">Volg Ons</h4>
-      <div class="d-flex gap-3 mb-3">
-       <a href="https://linkedin.com" class="text-white" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> 
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-        </svg> 
-       </a> <a href="https://twitter.com" class="text-white" aria-label="Twitter" target="_blank" rel="noopener noreferrer"> 
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-         <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-        </svg> 
-       </a>
+  <footer class="dr-footer" aria-label="Voettekst">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-brand">
+      <div class="dr-footer-logo" aria-hidden="true">
+        <span class="dr-footer-logo-mark"></span>
+        <span class="dr-footer-logo-text">domain</span>
       </div>
-     </div>
+      <p class="dr-footer-description">Digitale oplossingen met oog voor natuur, betrouwbaarheid en eenvoud.</p>
     </div>
-    <hr class="my-4" style="opacity: 0.2;">
-    <div class="row">
-     <div class="col-md-6 text-center text-md-start">
-      <p class="mb-0" style="opacity: 0.8;">© 2025 NatuurDigitaal Consulting. Alle rechten voorbehouden.</p>
-     </div>
-     <div class="col-md-6 text-center text-md-end">
-      <a href="impressum.html" class="text-white text-decoration-none" style="opacity: 0.8;">Impressum</a>
-     </div>
+    <div class="dr-footer-grid">
+      <nav class="dr-footer-nav" aria-label="Hoofdnavigatie in de footer">
+        <h2 class="dr-footer-title">Navigatie</h2>
+        <ul class="dr-footer-list">
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./index.html">Home</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./about.html">About</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./contact.html">Contact</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./services.html">Services</a></li>
+        </ul>
+      </nav>
+      <nav class="dr-footer-legal" aria-label="Juridische informatie">
+        <h2 class="dr-footer-title">Juridisch</h2>
+        <ul class="dr-footer-list">
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./privacy.html">Privacy Policy</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./terms_of_services.html">Terms of Service</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./terms_and_conditions.html">Terms and Conditions</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./cookie_policy.html">Cookie Policy</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./gdpr-rights.html">GDPR Rights</a></li>
+          <li class="dr-footer-item"><a class="dr-footer-link" href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+      <section class="dr-footer-contact" aria-label="Contactgegevens">
+        <h2 class="dr-footer-title">Contact</h2>
+        <address class="dr-footer-address">
+          <p class="dr-footer-contact-line dr-footer-contact-address">World Trade Center Amsterdam, Strawinskylaan 77, Floor 6, Office 603, 1077 XX Amsterdam</p>
+          <p class="dr-footer-contact-line">Tel: <a class="dr-footer-link" href="tel:+31 40 2911760">+31 40 2911760</a></p>
+          <p class="dr-footer-contact-line">E-mail: <a class="dr-footer-link" href="mailto:welcome@domain.com">welcome@domain.com</a></p>
+        </address>
+      </section>
     </div>
-   </div>
-  </footer>
-  <script src="script.js" defer=""></script>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-disclaimer">Alle inhoud op deze website wordt aangeboden door domain. Gebruik van deze site en de informatie op domain.com is onderhevig aan de toepasselijke voorwaarden en wetgeving. Geen enkel onderdeel mag worden gereproduceerd zonder voorafgaande schriftelijke toestemming van domain.</p>
+      <p class="dr-footer-meta"><span class="dr-year"></span> © domain. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  
  
+  
+  
+
+<script src="script.js" defer=""></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
 </body></html>

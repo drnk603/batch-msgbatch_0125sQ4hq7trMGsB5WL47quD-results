@@ -196,7 +196,7 @@
         const field = fields[key];
         
         if (field.required && !field.value) {
-          errors.push({ id: key, message: 'Це поле обов'язкове' });
+          errors.push({ id: key, message: "Це поле обов'язкове" });
           return;
         }
 
@@ -204,7 +204,7 @@
 
         if (key.includes('first') || key.includes('last') || key.includes('First') || key.includes('Last')) {
           if (!REGEX.NAME.test(field.value)) {
-            errors.push({ id: key, message: 'Введіть коректне ім'я (2-50 символів)' });
+            errors.push({ id: key, message: "Введіть коректне ім'я (2-50 символів)" });
           }
         }
 
